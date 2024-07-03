@@ -1,0 +1,596 @@
+[
+    {
+        "label": "turtle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle",
+        "description": "turtle",
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders10_TosbaYildiz",
+        "description": "Ders10_TosbaYildiz",
+        "peekOfCode": "pencere = tosba.Screen()\npencere.setup(width=500, height=500)\npencere.title(\"Sanat Eseri\")\ntosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(15)\nrenkler=[\"red\", \"yellow\",\"blue\",\"violet\", \"purple\", \"green\"]\npencere.bgcolor(\"black\")\nfor i in range(50):\n    tosbik.forward(100)",
+        "detail": "Ders10_TosbaYildiz",
+        "documentation": {}
+    },
+    {
+        "label": "tosbik",
+        "kind": 5,
+        "importPath": "Ders10_TosbaYildiz",
+        "description": "Ders10_TosbaYildiz",
+        "peekOfCode": "tosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(15)\nrenkler=[\"red\", \"yellow\",\"blue\",\"violet\", \"purple\", \"green\"]\npencere.bgcolor(\"black\")\nfor i in range(50):\n    tosbik.forward(100)\n    tosbik.color(renkler[rd.randint(0,5)])\n    tosbik.left(90+i)\npencere.mainloop()",
+        "detail": "Ders10_TosbaYildiz",
+        "documentation": {}
+    },
+    {
+        "label": "tosbik",
+        "kind": 5,
+        "importPath": "Ders11_tosbaKareveDaire",
+        "description": "Ders11_tosbaKareveDaire",
+        "peekOfCode": "tosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(1)\nfor i in range(5):\n    tosbik.forward(100)\n    tosbik.right(90)\ntosbik.circle(10)\npencere.mainloop()\n#------------------------------",
+        "detail": "Ders11_tosbaKareveDaire",
+        "documentation": {}
+    },
+    {
+        "label": "renkler",
+        "kind": 5,
+        "importPath": "Ders12_RenkliDaireler",
+        "description": "Ders12_RenkliDaireler",
+        "peekOfCode": "renkler = [\"blue\", \"red\", \"yellow\", \"purple\", \"violet\",\"green\"]\npencere = tosba.Screen()\npencere.setup(width = 500, height = 500)\npencere.bgcolor(\"black\")\npencere.title(\"Daireler\")\ntosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(50)\ntosbik.color(\"white\")\nfor i in range(150):",
+        "detail": "Ders12_RenkliDaireler",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders12_RenkliDaireler",
+        "description": "Ders12_RenkliDaireler",
+        "peekOfCode": "pencere = tosba.Screen()\npencere.setup(width = 500, height = 500)\npencere.bgcolor(\"black\")\npencere.title(\"Daireler\")\ntosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(50)\ntosbik.color(\"white\")\nfor i in range(150):\n    tosbik.circle(10+i)",
+        "detail": "Ders12_RenkliDaireler",
+        "documentation": {}
+    },
+    {
+        "label": "pencere.setup(width",
+        "kind": 5,
+        "importPath": "Ders12_RenkliDaireler",
+        "description": "Ders12_RenkliDaireler",
+        "peekOfCode": "pencere.setup(width = 500, height = 500)\npencere.bgcolor(\"black\")\npencere.title(\"Daireler\")\ntosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(50)\ntosbik.color(\"white\")\nfor i in range(150):\n    tosbik.circle(10+i)\n    tosbik.right(10)",
+        "detail": "Ders12_RenkliDaireler",
+        "documentation": {}
+    },
+    {
+        "label": "tosbik",
+        "kind": 5,
+        "importPath": "Ders12_RenkliDaireler",
+        "description": "Ders12_RenkliDaireler",
+        "peekOfCode": "tosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(50)\ntosbik.color(\"white\")\nfor i in range(150):\n    tosbik.circle(10+i)\n    tosbik.right(10)\n    tosbik.color(renkler[rd.randint(0,5)])\npencere.mainloop()",
+        "detail": "Ders12_RenkliDaireler",
+        "documentation": {}
+    },
+    {
+        "label": "zarAt",
+        "kind": 2,
+        "importPath": "Ders13_zaratma",
+        "description": "Ders13_zaratma",
+        "peekOfCode": "def zarAt(zarlar):\n    donmeZamani = rd.randint(1,100)\n    for i in range(donmeZamani):\n        lblZar.configure(text=\"{}{}\".format( rd.choice(zarlar), rd.choice(zarlar) ) )\n        lblZar.pack()\n        zamaniYavaslat = ((i+1)/donmeZamani)/4\n        t.sleep(zamaniYavaslat)\n        pencere.update()\nbtnZarat = tk.Button(pencere, text=\"ZAR AT\", font=30, bg=\"red\",fg=\"white\", \\\n                     width=20,height=2, command=lambda:zarAt(zarlar))",
+        "detail": "Ders13_zaratma",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders13_zaratma",
+        "description": "Ders13_zaratma",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Şanslı Zarlar\")\npencere.geometry(\"500x300\")\nzarlar = [\"⚀\",\"⚁\",\"⚂\",\"⚃\",\"⚄\",\"⚅\"]\ndef zarAt(zarlar):\n    donmeZamani = rd.randint(1,100)\n    for i in range(donmeZamani):\n        lblZar.configure(text=\"{}{}\".format( rd.choice(zarlar), rd.choice(zarlar) ) )\n        lblZar.pack()\n        zamaniYavaslat = ((i+1)/donmeZamani)/4",
+        "detail": "Ders13_zaratma",
+        "documentation": {}
+    },
+    {
+        "label": "zarlar",
+        "kind": 5,
+        "importPath": "Ders13_zaratma",
+        "description": "Ders13_zaratma",
+        "peekOfCode": "zarlar = [\"⚀\",\"⚁\",\"⚂\",\"⚃\",\"⚄\",\"⚅\"]\ndef zarAt(zarlar):\n    donmeZamani = rd.randint(1,100)\n    for i in range(donmeZamani):\n        lblZar.configure(text=\"{}{}\".format( rd.choice(zarlar), rd.choice(zarlar) ) )\n        lblZar.pack()\n        zamaniYavaslat = ((i+1)/donmeZamani)/4\n        t.sleep(zamaniYavaslat)\n        pencere.update()\nbtnZarat = tk.Button(pencere, text=\"ZAR AT\", font=30, bg=\"red\",fg=\"white\", \\",
+        "detail": "Ders13_zaratma",
+        "documentation": {}
+    },
+    {
+        "label": "btnZarat",
+        "kind": 5,
+        "importPath": "Ders13_zaratma",
+        "description": "Ders13_zaratma",
+        "peekOfCode": "btnZarat = tk.Button(pencere, text=\"ZAR AT\", font=30, bg=\"red\",fg=\"white\", \\\n                     width=20,height=2, command=lambda:zarAt(zarlar))\nbtnZarat.pack(pady=10)\nlblZar = tk.Label(pencere, text = \"\", font=(\"Arial\",150))\nlblZar.pack()\npencere.mainloop()",
+        "detail": "Ders13_zaratma",
+        "documentation": {}
+    },
+    {
+        "label": "lblZar",
+        "kind": 5,
+        "importPath": "Ders13_zaratma",
+        "description": "Ders13_zaratma",
+        "peekOfCode": "lblZar = tk.Label(pencere, text = \"\", font=(\"Arial\",150))\nlblZar.pack()\npencere.mainloop()",
+        "detail": "Ders13_zaratma",
+        "documentation": {}
+    },
+    {
+        "label": "bilgisayar",
+        "kind": 5,
+        "importPath": "Ders3_SayiTahmin",
+        "description": "Ders3_SayiTahmin",
+        "peekOfCode": "bilgisayar = random.randint(1,10)\nwhile True:\n    kullanici = int(input(\"Bir sayi giriniz : \"))\n    if bilgisayar == kullanici:\n        print(\"Doğru Tahmin\")\n    else:\n        print(3*\" Bilmedikiiiii\")",
+        "detail": "Ders3_SayiTahmin",
+        "documentation": {}
+    },
+    {
+        "label": "secenekler",
+        "kind": 5,
+        "importPath": "Ders4_OgrenciKayit",
+        "description": "Ders4_OgrenciKayit",
+        "peekOfCode": "secenekler = [1,2,3,4]\nsinif = []\nwhile True:\n    menu = \"\"\"\n        ---- MENU ----\n        1. Ögrenci Ekle\n        2. Öğrenci Sil\n        3. Öğrenci Listele\n        4. Programdan Çık\n        > \"\"\"",
+        "detail": "Ders4_OgrenciKayit",
+        "documentation": {}
+    },
+    {
+        "label": "sinif",
+        "kind": 5,
+        "importPath": "Ders4_OgrenciKayit",
+        "description": "Ders4_OgrenciKayit",
+        "peekOfCode": "sinif = []\nwhile True:\n    menu = \"\"\"\n        ---- MENU ----\n        1. Ögrenci Ekle\n        2. Öğrenci Sil\n        3. Öğrenci Listele\n        4. Programdan Çık\n        > \"\"\"\n    cevap = int(input(menu))",
+        "detail": "Ders4_OgrenciKayit",
+        "documentation": {}
+    },
+    {
+        "label": "hesapla",
+        "kind": 2,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "def hesapla(event=None):\n    islem = giris.get()\n    sonuc = eval(islem)\n    giris.insert(tk.END, \" = \" + str(sonuc))\ndef ekranTemizle(event=None):\n    giris.delete(0,tk.END)\npencere = tk.Tk()\npencere.title(\"Hesap Makinesi\")\nekranGenisligi = pencere.winfo_screenwidth()\nekranYuksekligi = pencere.winfo_screenheight()",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "ekranTemizle",
+        "kind": 2,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "def ekranTemizle(event=None):\n    giris.delete(0,tk.END)\npencere = tk.Tk()\npencere.title(\"Hesap Makinesi\")\nekranGenisligi = pencere.winfo_screenwidth()\nekranYuksekligi = pencere.winfo_screenheight()\npencereGenisligi = 360\npencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Hesap Makinesi\")\nekranGenisligi = pencere.winfo_screenwidth()\nekranYuksekligi = pencere.winfo_screenheight()\npencereGenisligi = 360\npencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "ekranGenisligi",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "ekranGenisligi = pencere.winfo_screenwidth()\nekranYuksekligi = pencere.winfo_screenheight()\npencereGenisligi = 360\npencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "ekranYuksekligi",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "ekranYuksekligi = pencere.winfo_screenheight()\npencereGenisligi = 360\npencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "pencereGenisligi",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "pencereGenisligi = 360\npencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "pencereYuksekligi",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "pencereYuksekligi = 50\nx = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "x = int((ekranGenisligi / 2) - (pencereGenisligi/2))\ny = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)\ndugme.pack(side=tk.LEFT, padx=5)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "y = int((ekranYuksekligi / 2) - (pencereYuksekligi / 2))\nprint(x, y)\npencere.geometry(f\"{pencereGenisligi}x{pencereYuksekligi}+{x}+{y}\")\netiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)\ndugme.pack(side=tk.LEFT, padx=5)\ngiris.bind('<Return>', hesapla)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "etiket",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "etiket = tk.Label(pencere, text=\"İşlem\", font=30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)\ndugme.pack(side=tk.LEFT, padx=5)\ngiris.bind('<Return>', hesapla)\n#Burayı girmeyi unutmuşum...:(\ngiris.bind('<Escape>',ekranTemizle)\ntemizle = tk.Button(pencere, text=\"Temizle\", command=ekranTemizle)",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "giris",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "giris = tk.Entry(pencere,font=30, width=15,bd=0)\ngiris.pack(side= tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)\ndugme.pack(side=tk.LEFT, padx=5)\ngiris.bind('<Return>', hesapla)\n#Burayı girmeyi unutmuşum...:(\ngiris.bind('<Escape>',ekranTemizle)\ntemizle = tk.Button(pencere, text=\"Temizle\", command=ekranTemizle)\ntemizle.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "dugme",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "dugme = tk.Button(pencere, text=\"Hesapla\", command=hesapla)\ndugme.pack(side=tk.LEFT, padx=5)\ngiris.bind('<Return>', hesapla)\n#Burayı girmeyi unutmuşum...:(\ngiris.bind('<Escape>',ekranTemizle)\ntemizle = tk.Button(pencere, text=\"Temizle\", command=ekranTemizle)\ntemizle.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "temizle",
+        "kind": 5,
+        "importPath": "Ders5_hesapmakinesi",
+        "description": "Ders5_hesapmakinesi",
+        "peekOfCode": "temizle = tk.Button(pencere, text=\"Temizle\", command=ekranTemizle)\ntemizle.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "Ders5_hesapmakinesi",
+        "documentation": {}
+    },
+    {
+        "label": "tosbik",
+        "kind": 5,
+        "importPath": "Ders6_tosbaDuzCizgi",
+        "description": "Ders6_tosbaDuzCizgi",
+        "peekOfCode": "tosbik = tosba.Turtle()\ntosbik.speed(1)\ntosbik.pencolor(\"yellow\")\ntosbik.forward(100)\ntosbik.right(90)\ntosbik.forward(100)\ntosbik.penup()\ntosbik.right(90)\ntosbik.forward(100)\ntosbik.pendown()",
+        "detail": "Ders6_tosbaDuzCizgi",
+        "documentation": {}
+    },
+    {
+        "label": "oynat",
+        "kind": 2,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "def oynat(secim):\n    sonuc=\"\"\n    global oyuncuSkoru, bilgisayarSkoru,berabereSkoru\n    secimler = [\"Tas\", \"Kagit\", \"Makas\"]\n    bilgisayar = rd.choice(secimler)\n    if secim ==bilgisayar:\n        sonuc = \"Berabere\"\n        berabereSkoru +=1\n    elif (secim == \"Tas\" and bilgisayar == \"Kagit\") or \\\n         (secim == \"Kagit\" and bilgisayar == \"Makas\") or \\",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Taş Kağıt Makas Oyunu\")\npencere.geometry(\"400x200\")\noyuncuSkoru= 0\nbilgisayarSkoru = 0\nberabereSkoru = 0\ndef oynat(secim):\n    sonuc=\"\"\n    global oyuncuSkoru, bilgisayarSkoru,berabereSkoru\n    secimler = [\"Tas\", \"Kagit\", \"Makas\"]",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "bilgisayarSkoru",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "bilgisayarSkoru = 0\nberabereSkoru = 0\ndef oynat(secim):\n    sonuc=\"\"\n    global oyuncuSkoru, bilgisayarSkoru,berabereSkoru\n    secimler = [\"Tas\", \"Kagit\", \"Makas\"]\n    bilgisayar = rd.choice(secimler)\n    if secim ==bilgisayar:\n        sonuc = \"Berabere\"\n        berabereSkoru +=1",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "berabereSkoru",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "berabereSkoru = 0\ndef oynat(secim):\n    sonuc=\"\"\n    global oyuncuSkoru, bilgisayarSkoru,berabereSkoru\n    secimler = [\"Tas\", \"Kagit\", \"Makas\"]\n    bilgisayar = rd.choice(secimler)\n    if secim ==bilgisayar:\n        sonuc = \"Berabere\"\n        berabereSkoru +=1\n    elif (secim == \"Tas\" and bilgisayar == \"Kagit\") or \\",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "skorEtiket",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "skorEtiket = tk.Label(pencere,text=\"Siz : 0, Bilgisayar = 0, Berabere = 0\", \\\n                      font=(\"Arial\",14))\nskorEtiket.pack(pady=10)\noyunEtiket = tk.Label(pencere,text = \"Siz : Tas, Bilgisayar : Kagit, Sonuc : Kazandınız!\")\noyunEtiket.pack(pady=10)\nbtnTas = tk.Button(pencere, text=\"\\u270A\", width = 2, font = (\"Arial\",40), \\\n                    command=lambda:oynat(\"Tas\"))\nbtnTas.pack(side=tk.LEFT, padx=10)\nbtnKagit = tk.Button(pencere, text=\"\\u270B\", width = 2, font = (\"Arial\",40) ,\\\n                     command=lambda:oynat(\"Kagit\"))",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "oyunEtiket",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "oyunEtiket = tk.Label(pencere,text = \"Siz : Tas, Bilgisayar : Kagit, Sonuc : Kazandınız!\")\noyunEtiket.pack(pady=10)\nbtnTas = tk.Button(pencere, text=\"\\u270A\", width = 2, font = (\"Arial\",40), \\\n                    command=lambda:oynat(\"Tas\"))\nbtnTas.pack(side=tk.LEFT, padx=10)\nbtnKagit = tk.Button(pencere, text=\"\\u270B\", width = 2, font = (\"Arial\",40) ,\\\n                     command=lambda:oynat(\"Kagit\"))\nbtnKagit.pack(side=tk.LEFT, padx=10)\nbtnMakas = tk.Button(pencere, text=\"\\u2704\", width = 2, font = (\"Arial\",40) , \\\n                     command=lambda:oynat(\"Makas\"))",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "btnTas",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "btnTas = tk.Button(pencere, text=\"\\u270A\", width = 2, font = (\"Arial\",40), \\\n                    command=lambda:oynat(\"Tas\"))\nbtnTas.pack(side=tk.LEFT, padx=10)\nbtnKagit = tk.Button(pencere, text=\"\\u270B\", width = 2, font = (\"Arial\",40) ,\\\n                     command=lambda:oynat(\"Kagit\"))\nbtnKagit.pack(side=tk.LEFT, padx=10)\nbtnMakas = tk.Button(pencere, text=\"\\u2704\", width = 2, font = (\"Arial\",40) , \\\n                     command=lambda:oynat(\"Makas\"))\nbtnMakas.pack(side=tk.LEFT, padx=10)\npencere.mainloop()",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "btnKagit",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "btnKagit = tk.Button(pencere, text=\"\\u270B\", width = 2, font = (\"Arial\",40) ,\\\n                     command=lambda:oynat(\"Kagit\"))\nbtnKagit.pack(side=tk.LEFT, padx=10)\nbtnMakas = tk.Button(pencere, text=\"\\u2704\", width = 2, font = (\"Arial\",40) , \\\n                     command=lambda:oynat(\"Makas\"))\nbtnMakas.pack(side=tk.LEFT, padx=10)\npencere.mainloop()",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "btnMakas",
+        "kind": 5,
+        "importPath": "Ders7_TKM",
+        "description": "Ders7_TKM",
+        "peekOfCode": "btnMakas = tk.Button(pencere, text=\"\\u2704\", width = 2, font = (\"Arial\",40) , \\\n                     command=lambda:oynat(\"Makas\"))\nbtnMakas.pack(side=tk.LEFT, padx=10)\npencere.mainloop()",
+        "detail": "Ders7_TKM",
+        "documentation": {}
+    },
+    {
+        "label": "yaziyiKaydir",
+        "kind": 2,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "def yaziyiKaydir():\n    canva.move(text, -1, 0)\n    canva.move(text2, 1, 0)\n    x, _ = canva.coords(text)\n    x2, _ = canva.coords(text2)\n    if x < -500:\n        canva.coords(text, 600,25)\n    if x2 > 600:\n        canva.coords(text2,-100,75)\n    pencere.after(30,yaziyiKaydir)",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "genislik",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "genislik = 600\nyukseklik = 100\ndef yaziyiKaydir():\n    canva.move(text, -1, 0)\n    canva.move(text2, 1, 0)\n    x, _ = canva.coords(text)\n    x2, _ = canva.coords(text2)\n    if x < -500:\n        canva.coords(text, 600,25)\n    if x2 > 600:",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "yukseklik",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "yukseklik = 100\ndef yaziyiKaydir():\n    canva.move(text, -1, 0)\n    canva.move(text2, 1, 0)\n    x, _ = canva.coords(text)\n    x2, _ = canva.coords(text2)\n    if x < -500:\n        canva.coords(text, 600,25)\n    if x2 > 600:\n        canva.coords(text2,-100,75)",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Kayan Yazi\")\npencere.geometry(f\"{genislik}x{yukseklik}\")\ncanva = tk.Canvas(pencere, width = genislik, height=yukseklik, bg=\"black\")\ncanva.pack()\ntext = canva.create_text(600, 25, \\\n                         text=\"Yalnız taştan duvar olmaz, bunu yaz bir yere\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")\ntext2 = canva.create_text(-100, 75, \\",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "canva",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "canva = tk.Canvas(pencere, width = genislik, height=yukseklik, bg=\"black\")\ncanva.pack()\ntext = canva.create_text(600, 25, \\\n                         text=\"Yalnız taştan duvar olmaz, bunu yaz bir yere\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")\ntext2 = canva.create_text(-100, 75, \\\n                         text=\"Dum tıs tıs tıs Dum tıs tıs tıs\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "text = canva.create_text(600, 25, \\\n                         text=\"Yalnız taştan duvar olmaz, bunu yaz bir yere\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")\ntext2 = canva.create_text(-100, 75, \\\n                         text=\"Dum tıs tıs tıs Dum tıs tıs tıs\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")\nyaziyiKaydir()\npencere.mainloop()",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "text2",
+        "kind": 5,
+        "importPath": "Ders8_kayanyazi",
+        "description": "Ders8_kayanyazi",
+        "peekOfCode": "text2 = canva.create_text(-100, 75, \\\n                         text=\"Dum tıs tıs tıs Dum tıs tıs tıs\",\\\n                         font=(\"Helvetica\", 20),\\\n                         fill=\"turquoise\")\nyaziyiKaydir()\npencere.mainloop()",
+        "detail": "Ders8_kayanyazi",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "Ders9_SanatEseri",
+        "description": "Ders9_SanatEseri",
+        "peekOfCode": "pencere = tosba.Screen()\npencere.setup(width=500, height=500)\npencere.title(\"Sanat Eseri\")\ntosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(15)\nfor i in range(2000):\n    adim= rd.randint(0,10)\n    aci = rd.randint(1,360)\n    tosbik.forward(adim)",
+        "detail": "Ders9_SanatEseri",
+        "documentation": {}
+    },
+    {
+        "label": "tosbik",
+        "kind": 5,
+        "importPath": "Ders9_SanatEseri",
+        "description": "Ders9_SanatEseri",
+        "peekOfCode": "tosbik = tosba.Turtle()\ntosbik.shape(\"turtle\")\ntosbik.speed(15)\nfor i in range(2000):\n    adim= rd.randint(0,10)\n    aci = rd.randint(1,360)\n    tosbik.forward(adim)\n    tosbik.right(aci)\npencere.mainloop()",
+        "detail": "Ders9_SanatEseri",
+        "documentation": {}
+    },
+    {
+        "label": "yas",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "yas = 13\nprint(yas*2)\na = 5\nb = 7\nprint(a+b, \"Python\")\nyas = 45\nad = \"Deniz\"\nprint(ad,yas,\"yasinda\")\nad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "a = 5\nb = 7\nprint(a+b, \"Python\")\nyas = 45\nad = \"Deniz\"\nprint(ad,yas,\"yasinda\")\nad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "b = 7\nprint(a+b, \"Python\")\nyas = 45\nad = \"Deniz\"\nprint(ad,yas,\"yasinda\")\nad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "yas",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "yas = 45\nad = \"Deniz\"\nprint(ad,yas,\"yasinda\")\nad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "ad",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "ad = \"Deniz\"\nprint(ad,yas,\"yasinda\")\nad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "ad",
+        "kind": 5,
+        "importPath": "ders1_MerhabaDunya",
+        "description": "ders1_MerhabaDunya",
+        "peekOfCode": "ad = input(\"Adinizi Giriniz :\")",
+        "detail": "ders1_MerhabaDunya",
+        "documentation": {}
+    },
+    {
+        "label": "ad",
+        "kind": 5,
+        "importPath": "ders2_BenimHikayem",
+        "description": "ders2_BenimHikayem",
+        "peekOfCode": "ad = input(\"Adınızı Girin\")\nsevdiginYemek = input(\"Sevdiğin Yemek:\")\nsevdiginRenk = input(\"Sevdigin Renk : \")\nkediminAdı = input(\"Kedimin adını Gir:\")\nokulNumaram = input(\"Okul Numaranı Gir : \")\nhikayem=f\"\"\"\nMerhaba, benim adim {ad},\nEn sevdigim yemek {sevdiginYemek},\nEn sevdiğim renk ise {sevdiginRenk},\nBir tane suratsız bir kedim var adi ise {kediminAdı},",
+        "detail": "ders2_BenimHikayem",
+        "documentation": {}
+    },
+    {
+        "label": "sevdiginYemek",
+        "kind": 5,
+        "importPath": "ders2_BenimHikayem",
+        "description": "ders2_BenimHikayem",
+        "peekOfCode": "sevdiginYemek = input(\"Sevdiğin Yemek:\")\nsevdiginRenk = input(\"Sevdigin Renk : \")\nkediminAdı = input(\"Kedimin adını Gir:\")\nokulNumaram = input(\"Okul Numaranı Gir : \")\nhikayem=f\"\"\"\nMerhaba, benim adim {ad},\nEn sevdigim yemek {sevdiginYemek},\nEn sevdiğim renk ise {sevdiginRenk},\nBir tane suratsız bir kedim var adi ise {kediminAdı},\nOkulda arkadaşlarımı çok seviyorum ve benim okul numaram {okulNumaram}",
+        "detail": "ders2_BenimHikayem",
+        "documentation": {}
+    },
+    {
+        "label": "sevdiginRenk",
+        "kind": 5,
+        "importPath": "ders2_BenimHikayem",
+        "description": "ders2_BenimHikayem",
+        "peekOfCode": "sevdiginRenk = input(\"Sevdigin Renk : \")\nkediminAdı = input(\"Kedimin adını Gir:\")\nokulNumaram = input(\"Okul Numaranı Gir : \")\nhikayem=f\"\"\"\nMerhaba, benim adim {ad},\nEn sevdigim yemek {sevdiginYemek},\nEn sevdiğim renk ise {sevdiginRenk},\nBir tane suratsız bir kedim var adi ise {kediminAdı},\nOkulda arkadaşlarımı çok seviyorum ve benim okul numaram {okulNumaram}\n\"\"\"",
+        "detail": "ders2_BenimHikayem",
+        "documentation": {}
+    },
+    {
+        "label": "kediminAdı",
+        "kind": 5,
+        "importPath": "ders2_BenimHikayem",
+        "description": "ders2_BenimHikayem",
+        "peekOfCode": "kediminAdı = input(\"Kedimin adını Gir:\")\nokulNumaram = input(\"Okul Numaranı Gir : \")\nhikayem=f\"\"\"\nMerhaba, benim adim {ad},\nEn sevdigim yemek {sevdiginYemek},\nEn sevdiğim renk ise {sevdiginRenk},\nBir tane suratsız bir kedim var adi ise {kediminAdı},\nOkulda arkadaşlarımı çok seviyorum ve benim okul numaram {okulNumaram}\n\"\"\"\nprint(hikayem)",
+        "detail": "ders2_BenimHikayem",
+        "documentation": {}
+    },
+    {
+        "label": "okulNumaram",
+        "kind": 5,
+        "importPath": "ders2_BenimHikayem",
+        "description": "ders2_BenimHikayem",
+        "peekOfCode": "okulNumaram = input(\"Okul Numaranı Gir : \")\nhikayem=f\"\"\"\nMerhaba, benim adim {ad},\nEn sevdigim yemek {sevdiginYemek},\nEn sevdiğim renk ise {sevdiginRenk},\nBir tane suratsız bir kedim var adi ise {kediminAdı},\nOkulda arkadaşlarımı çok seviyorum ve benim okul numaram {okulNumaram}\n\"\"\"\nprint(hikayem)\nprint(127%3)",
+        "detail": "ders2_BenimHikayem",
+        "documentation": {}
+    },
+    {
+        "label": "puan",
+        "kind": 5,
+        "importPath": "ders3_BilgiYarismasi",
+        "description": "ders3_BilgiYarismasi",
+        "peekOfCode": "puan = 0\ncevap1 = input(\"Türkiye'nin Başkenti neresidir?\").upper()\nif cevap1 == \"ANKARA\":\n    print(\"Cevabınız doğru\")\n    puan = puan + 1\ncevap2 = input(\"Hangi programala dilini öğreniyorsunuz \").lower()\nif cevap2 == \"python\":\n    print(\"Cevabınız doğru!\")\n    puan = puan + 1\ncevap3 = int(input(\"Türkiye'de kaç il var?\"))",
+        "detail": "ders3_BilgiYarismasi",
+        "documentation": {}
+    },
+    {
+        "label": "cevap1",
+        "kind": 5,
+        "importPath": "ders3_BilgiYarismasi",
+        "description": "ders3_BilgiYarismasi",
+        "peekOfCode": "cevap1 = input(\"Türkiye'nin Başkenti neresidir?\").upper()\nif cevap1 == \"ANKARA\":\n    print(\"Cevabınız doğru\")\n    puan = puan + 1\ncevap2 = input(\"Hangi programala dilini öğreniyorsunuz \").lower()\nif cevap2 == \"python\":\n    print(\"Cevabınız doğru!\")\n    puan = puan + 1\ncevap3 = int(input(\"Türkiye'de kaç il var?\"))\nif cevap3 == 81:",
+        "detail": "ders3_BilgiYarismasi",
+        "documentation": {}
+    },
+    {
+        "label": "cevap2",
+        "kind": 5,
+        "importPath": "ders3_BilgiYarismasi",
+        "description": "ders3_BilgiYarismasi",
+        "peekOfCode": "cevap2 = input(\"Hangi programala dilini öğreniyorsunuz \").lower()\nif cevap2 == \"python\":\n    print(\"Cevabınız doğru!\")\n    puan = puan + 1\ncevap3 = int(input(\"Türkiye'de kaç il var?\"))\nif cevap3 == 81:\n    print(\"Cevabınız Doğru\")\n    puan = puan + 1\nprint(f\"Puanınız : {puan}\")",
+        "detail": "ders3_BilgiYarismasi",
+        "documentation": {}
+    },
+    {
+        "label": "cevap3",
+        "kind": 5,
+        "importPath": "ders3_BilgiYarismasi",
+        "description": "ders3_BilgiYarismasi",
+        "peekOfCode": "cevap3 = int(input(\"Türkiye'de kaç il var?\"))\nif cevap3 == 81:\n    print(\"Cevabınız Doğru\")\n    puan = puan + 1\nprint(f\"Puanınız : {puan}\")",
+        "detail": "ders3_BilgiYarismasi",
+        "documentation": {}
+    }
+]
