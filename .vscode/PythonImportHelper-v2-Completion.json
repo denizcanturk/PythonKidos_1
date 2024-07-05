@@ -36,6 +36,23 @@
         "documentation": {}
     },
     {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "pyttsx3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyttsx3",
+        "description": "pyttsx3",
+        "detail": "pyttsx3",
+        "documentation": {}
+    },
+    {
         "label": "pencere",
         "kind": 5,
         "importPath": "Ders10_TosbaYildiz",
@@ -148,7 +165,7 @@
         "kind": 5,
         "importPath": "Ders3_SayiTahmin",
         "description": "Ders3_SayiTahmin",
-        "peekOfCode": "bilgisayar = random.randint(1,10)\nwhile True:\n    kullanici = int(input(\"Bir sayi giriniz : \"))\n    if bilgisayar == kullanici:\n        print(\"Doğru Tahmin\")\n    else:\n        print(3*\" Bilmedikiiiii\")",
+        "peekOfCode": "bilgisayar = random.randint(1,10)\nwhile True:\n    kullanici = int(input(\"Bir sayi giriniz : \"))\n    if bilgisayar == kullanici:\n        print(\"Doğru Tahmin\")\n        break\n    else:\n        print(3*\" Bilmedikiiiii\")",
         "detail": "Ders3_SayiTahmin",
         "documentation": {}
     },
@@ -591,6 +608,114 @@
         "description": "ders3_BilgiYarismasi",
         "peekOfCode": "cevap3 = int(input(\"Türkiye'de kaç il var?\"))\nif cevap3 == 81:\n    print(\"Cevabınız Doğru\")\n    puan = puan + 1\nprint(f\"Puanınız : {puan}\")",
         "detail": "ders3_BilgiYarismasi",
+        "documentation": {}
+    },
+    {
+        "label": "zaman",
+        "kind": 2,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "def zaman():\n    global counter\n    # global renk\n    # if renk == True:\n    #     lblEtiket.configure(background=\"blue\")\n    #     renk=False\n    # else:\n    #     lblEtiket.configure(background=\"red\")\n    #     renk=True\n    lblEtiket.configure(background=renkler[counter], foreground=renkler[counter-2])",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "renk",
+        "kind": 5,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "renk = True\nrenkler = [\"red\", \"blue\", \"purple\", \"white\", \"green\", \"pink\",\"yellow\", \"violet\", \"gray\", \"brown\"]\ncounter = 0\npencere = tk.Tk()\npencere.title(\"Benim Saatim\")\npencere.geometry(\"400x100\")\npencere.configure(background=\"black\")\ndef zaman():\n    global counter\n    # global renk",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "renkler",
+        "kind": 5,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "renkler = [\"red\", \"blue\", \"purple\", \"white\", \"green\", \"pink\",\"yellow\", \"violet\", \"gray\", \"brown\"]\ncounter = 0\npencere = tk.Tk()\npencere.title(\"Benim Saatim\")\npencere.geometry(\"400x100\")\npencere.configure(background=\"black\")\ndef zaman():\n    global counter\n    # global renk\n    # if renk == True:",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "counter = 0\npencere = tk.Tk()\npencere.title(\"Benim Saatim\")\npencere.geometry(\"400x100\")\npencere.configure(background=\"black\")\ndef zaman():\n    global counter\n    # global renk\n    # if renk == True:\n    #     lblEtiket.configure(background=\"blue\")",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Benim Saatim\")\npencere.geometry(\"400x100\")\npencere.configure(background=\"black\")\ndef zaman():\n    global counter\n    # global renk\n    # if renk == True:\n    #     lblEtiket.configure(background=\"blue\")\n    #     renk=False",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "lblEtiket",
+        "kind": 5,
+        "importPath": "digitalSaat",
+        "description": "digitalSaat",
+        "peekOfCode": "lblEtiket = tk.Label(pencere, text=\"saat\",font=(\"calibri\",50,\"bold\"), \\\n    background = \"red\", foreground=\"white\")\nlblEtiket.pack(anchor=\"center\")\nzaman()\npencere.mainloop()",
+        "detail": "digitalSaat",
+        "documentation": {}
+    },
+    {
+        "label": "konus",
+        "kind": 2,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "def konus():\n    konusucu.setProperty(\"rate\", 120)\n    konusucu.say(enGiris.get())\n    konusucu.runAndWait()\n    konusucu.stop()\npencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\nlblEtiket = tk.Label(pencere, text = \"Metin\", font=30 )\nlblEtiket.pack(side=tk.LEFT, padx=5)",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "konusucu",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "konusucu = p.init()\ndef konus():\n    konusucu.setProperty(\"rate\", 120)\n    konusucu.say(enGiris.get())\n    konusucu.runAndWait()\n    konusucu.stop()\npencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\nlblEtiket = tk.Label(pencere, text = \"Metin\", font=30 )",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\nlblEtiket = tk.Label(pencere, text = \"Metin\", font=30 )\nlblEtiket.pack(side=tk.LEFT, padx=5)\nenGiris = tk.Entry(pencere, font = 30, width=15, bd=0)\nenGiris.pack(side=tk.LEFT, padx=5)\nbtnDugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", bd=5, command=konus)\nbtnDugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "lblEtiket",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "lblEtiket = tk.Label(pencere, text = \"Metin\", font=30 )\nlblEtiket.pack(side=tk.LEFT, padx=5)\nenGiris = tk.Entry(pencere, font = 30, width=15, bd=0)\nenGiris.pack(side=tk.LEFT, padx=5)\nbtnDugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", bd=5, command=konus)\nbtnDugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "enGiris",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "enGiris = tk.Entry(pencere, font = 30, width=15, bd=0)\nenGiris.pack(side=tk.LEFT, padx=5)\nbtnDugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", bd=5, command=konus)\nbtnDugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "btnDugme",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "btnDugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", bd=5, command=konus)\nbtnDugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
         "documentation": {}
     }
 ]
