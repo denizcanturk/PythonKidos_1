@@ -717,5 +717,59 @@
         "peekOfCode": "cevap3 = int(input(\"Türkiye'de kaç il var?\"))\nif cevap3 == 81:\n    print(\"Cevabınız Doğru\")\n    puan = puan + 1\nprint(f\"Puanınız : {puan}\")",
         "detail": "ders3_BilgiYarismasi",
         "documentation": {}
+    },
+    {
+        "label": "konus",
+        "kind": 2,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "def konus():\n    kns.say(giris.get())\n    kns.runAndWait()\n    kns.stop()\npencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\netiket = tk.Label(pencere, text=\"Metin\", font = 30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere, width=15, font = 30, bd=0)",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "kns",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "kns = p.init()\ndef konus():\n    kns.say(giris.get())\n    kns.runAndWait()\n    kns.stop()\npencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\netiket = tk.Label(pencere, text=\"Metin\", font = 30)\netiket.pack(side=tk.LEFT, padx=5)",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "pencere",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "pencere = tk.Tk()\npencere.title(\"Konus Bakalım\")\npencere.geometry(\"300x50\")\netiket = tk.Label(pencere, text=\"Metin\", font = 30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere, width=15, font = 30, bd=0)\ngiris.pack(side=tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", command=konus)\ndugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "etiket",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "etiket = tk.Label(pencere, text=\"Metin\", font = 30)\netiket.pack(side=tk.LEFT, padx=5)\ngiris = tk.Entry(pencere, width=15, font = 30, bd=0)\ngiris.pack(side=tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", command=konus)\ndugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "giris",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "giris = tk.Entry(pencere, width=15, font = 30, bd=0)\ngiris.pack(side=tk.LEFT, padx=5)\ndugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", command=konus)\ndugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
+    },
+    {
+        "label": "dugme",
+        "kind": 5,
+        "importPath": "konus",
+        "description": "konus",
+        "peekOfCode": "dugme = tk.Button(pencere, text=\"Konus\", bg=\"red\", fg=\"white\", command=konus)\ndugme.pack(side=tk.LEFT, padx=5)\npencere.mainloop()",
+        "detail": "konus",
+        "documentation": {}
     }
 ]
